@@ -15,28 +15,63 @@ Deck d = new Deck(ranks, suits, pointValues);
 4) The order of elements in *rank* and *pointValues* matter in that they must be of the same arbitrary order as eachother. The order of elements in *suits* do not matter.
 
 ###Activity 3
-* 
+1) ```flip``` method
+```java
+public static String flip() {
+    double rand = Math.random();
+    if (rand < 0.25) return "heads";
+    else return "tails";
+}
+```
+2) ```arePermutations``` method
+
+```java
+public static boolean arePermutations(int[] array1, int[] array2) {
+    if (array1.length != array2.length) return false; //checks lengths
+    int sum1 = 0;
+    for (int a : array1) {
+        sum1 += a;
+    }
+    int sum2 = 0;
+    for (int b : array2) {
+        sum2 += b;
+    }
+    if (sum1 != sum2) return false; //checks sums
+
+    for (int a : array1) {
+        boolean isInB = false;
+        for (int b : array2) {
+            if (a == b) isInB = true;
+            break
+        }
+        if !isInB return false; //checks individual values
+    }
+    return true;
+}
+```
+
+3) You should do this Brendan...
 
 ###Activity 4
-* 
+*
 
 ###Activity 5
-* 
+*
 
 ###Activity 6
-* 
+*
 
 ###Activity 7
-* 
+*
 
 ###Activity 8
-* 
+*
 
 ###Activity 9
-* 
+*
 
 ###Activity 10
-* 
+*
 
 ###Activity 11
-* 
+*
