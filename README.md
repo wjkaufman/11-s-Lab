@@ -53,14 +53,17 @@ public static boolean arePermutations(int[] array1, int[] array2) {
 3) If the initial contents of ```values``` array is ```{1, 2, 3, 4}``` to change the contents of ```values``` to ```{4, 3, 2, 1}```:  
 Random numbers: ```{0, 1, 1, 0}```
 
-###Activity 4
-*
-
 ###Activity 5
-*
+1) 
 
 ###Activity 6
-*
+1) All possible plays for the board ```5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠``` are:  
+```
+5♠ 6♣
+5♣ 6♣
+```
+2) True. If the deck is empty, the remaining cards on the table must be able to form a pair/grouping. Any removable combination of 3 cards must be ```J Q K```  
+3) There is no strategy. EXPLAIN WHY DOESN'T MATTER ORDER
 
 ###Activity 7
 *
