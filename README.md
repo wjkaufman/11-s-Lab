@@ -51,11 +51,7 @@ public static boolean arePermutations(int[] array1, int[] array2) {
 ```
 
 3) If the initial contents of ```values``` array is ```{1, 2, 3, 4}``` to change the contents of ```values``` to ```{4, 3, 2, 1}```:  
-Random numbers:  
-0  
-1  
-1  
-0
+Random numbers: ```{0, 1, 1, 0}```
 
 ###Activity 4
 *
