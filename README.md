@@ -15,7 +15,7 @@ Deck d = new Deck(ranks, suits, pointValues);
 4) The order of elements in *rank* and *pointValues* matter in that they must be of the same arbitrary order as eachother. The order of elements in *suits* do not matter.
 
 ###Activity 3
-1) ```flip``` method
+1) `flip` method
 ```java
 public static String flip() {
     double rand = Math.random();
@@ -23,7 +23,7 @@ public static String flip() {
     else return "tails";
 }
 ```
-2) ```arePermutations``` method
+2) `arePermutations` method
 
 ```java
 public static boolean arePermutations(int[] array1, int[] array2) {
@@ -50,58 +50,23 @@ public static boolean arePermutations(int[] array1, int[] array2) {
 }
 ```
 
-3) If the initial contents of ```values``` array is ```{1, 2, 3, 4}``` to change the contents of ```values``` to ```{4, 3, 2, 1}```:  
-Random numbers: ```{0, 1, 1, 0}```
+3) If the initial contents of `values` array is `{1, 2, 3, 4}` to change the contents of `values` to `{4, 3, 2, 1}`:  
+Random numbers: `{0, 1, 1, 0}`
 
 ###Activity 5
-1)
+1) 
 
 ###Activity 6
-1) All possible plays for the board ```5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠``` are:  
+1) All possible plays for the board `5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠` are:  
 ```
 5♠ 6♣
 5♣ 6♣
 ```
-2) True. If the deck is empty, the remaining cards on the table must be able to form a pair/grouping. Any removable combination of 3 cards must be ```J Q K```
+2) True. If the deck is empty, the remaining cards on the table must be able to form a pair/grouping. Any removable combination of 3 cards must be `J Q K`  
 3) There is no strategy. EXPLAIN WHY DOESN'T MATTER ORDER
 
 ###Activity 7
-1) The items necessary to play 11's are
-* a standard deck of cards
-* a table
-
-Helpful private instance variables would be
-* a deck to control the cards (this would include a number of cards)
-* the number of piles in the game
-
-2)
-```
-Deal cards into [pile] piles
-
-repeat while not losing:
-    check if there exists a valid move
-    if there is no valid move, player loses
-
-    Select n cards
-
-    Check if the selected cards meet removal criteria
-        * Values of cards add to 11 and n=2
-        * Rank of cards are Jack, Queen, and King and n=3
-
-    If cards meet removal criteria, remove cards
-
-    if there are enough cards left in the deck, deal cards from deck into vacant spots
-
-player wins
-```
-
-3) It appears so, yes.  Brendan, can you check this*?
-
-4)
-
-a. `dealMyCards` is called in the constructor and the public method `newGame()`.
-
-b. `isLegal` should call `containsPairSum11` and `containsJDK` methods to check and see if the removal is legal.  `isLegal` will then be called in `removeSelectedCards`.
+*
 
 ###Activity 8
 *
