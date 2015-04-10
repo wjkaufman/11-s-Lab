@@ -54,7 +54,7 @@ public static boolean arePermutations(int[] array1, int[] array2) {
 Random numbers: `{0, 1, 1, 0}`
 
 ###Activity 5
-1) 
+1)
 
 ###Activity 6
 1) All possible plays for the board `5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠` are:  
@@ -66,7 +66,6 @@ Random numbers: `{0, 1, 1, 0}`
 3) There is no strategy. EXPLAIN WHY DOESN'T MATTER ORDER
 
 ###Activity 7
-*
 
 c. The returned list will be
 
