@@ -68,8 +68,40 @@ Random numbers: `{0, 1, 1, 0}`
 ###Activity 7
 *
 
+c. The returned list will be
+
+`0|1|3|6|7`
+
+d. `printCards` method
+
+```java
+public static printCards(ElevensBoard board) {
+    List<Integer> cIndexes = board.cardIndexes();
+    for (int i : cIndexes) {
+        System.out.println(board.cardAt(i));
+    }
+}
+```
+
+e. `removeSelectedCards` needs to call `cardIndexes` before `containsPairSum11` and `containsJQK`.
+
 ###Activity 8
-*
+1) Each of the Elevens based games all involve cards that must sum to a certain point value, or must fulfill another specific requirement (e.g. a Jack Queen King pair in Elevens).  The games differ in the number of piles for the game, as well as the point values assigned to the different cards.
+
+2) `Board` instance variables are initialized with the `ElevensBoard` values by writing
+
+```java
+Board myBoard = new ElevensBoard();
+```
+
+3) Abstract methods in `Board.java`:
+
+`public abstract boolean isLegal`
+`public abstract boolean anotherPlayIsPossible`
+
+The way the methods above are implemented in ElevensBoard should be sufficient in covering differences between the Elevens derivative games.
+
+
 
 ###Activity 9
 *
