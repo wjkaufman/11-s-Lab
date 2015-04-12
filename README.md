@@ -104,7 +104,7 @@ The way the methods above are implemented in ElevensBoard should be sufficient i
 
 ###Activity 9
 1) `size` is not an abstract method because it is an accessor to a private variable of the abstract class `Board` which is a the method by which a subclass accesses `cards` array  
-2) There is no abstract method to deal with the selection of cards being removed or replaced because which cards are selected is determined in an instance of `ElevensGUIRunner` (the GUI) and the selections are passed to the abstract class `isLegal` in `Board` to determine legality. In other words, the GUI must determine which cards are selected and explicitly indicate to the `Board` to replace those cards if necessary.
+2) There is no abstract method to deal with the selection of cards being removed or replaced because which cards are selected is determined in an instance of `ElevensGUIRunner` (the GUI) and the selections are passed to the abstract class `isLegal` in `Board` to determine legality. In other words, the GUI must determine which cards are selected and explicitly indicate to the `Board` to replace those cards if necessary.  
 3) Using an interface `Board` rather than an abstract class `Board` would still allow calls to `isLegal` and `anotherPlayIsPossible` however the design would not work as well as the current implementation as the using an abstract class `Board` allows every variation of the game (11s, 13s, etc) to use the same code in `Board` class to replace cards, determine if a game is won, and replace cards as these actions don't change depending on the game.
 
 ###Activity 10
