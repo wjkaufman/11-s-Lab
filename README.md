@@ -63,7 +63,14 @@ Random numbers: `{0, 1, 1, 0}`
 5♣ 6♣
 ```
 2) True. If the deck is empty, the remaining cards on the table must be able to form a pair/grouping. Any removable combination of 3 cards must be `J Q K`  
-3) There is no strategy. EXPLAIN WHY DOESN'T MATTER ORDER
+3) There is no strategy. The order doesn't matter because every card can only be used in one way. For example, the following is on the table:
+
+```
+3 8 7 9
+2 A A 2
+```
+If one removes the `3` and `8` their options regarding other plays (`9 and 2`) will not change.  
+If instead one were to remove the `9` and either `2` their options regarding `3` and `8` would not change. Additionally, both `2`s will affect possibilites equally as each is a single space into which the next card will be placed.
 
 ###Activity 7
 
