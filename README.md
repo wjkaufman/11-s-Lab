@@ -12,7 +12,7 @@ suits = {"spades", "hearts", "diamonds", "clubs"};
 pointValues = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 };
 Deck d = new Deck(ranks, suits, pointValues);
 ```
-4) The order of elements in *rank* and *pointValues* matter in that they must be of the same arbitrary order as eachother. The order of elements in *suits* do not matter.
+4) The order of elements in *rank* and *pointValues* matter in that they must be of the same arbitrary order as each other. The order of elements in *suits* do not matter.
 
 ###Activity 3
 1) `flip` method
